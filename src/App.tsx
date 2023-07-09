@@ -4,7 +4,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
 import { AppState } from "./global-interfaces/global-state.interface";
-import { title } from "process";
+
 
 //Create and export de context
 export const AppContext = createContext<AppState | undefined>(undefined);
