@@ -13,7 +13,7 @@ function App() {
         
           <Routes>
             <Route path="/" element={<><h2>Home</h2></>}/>
-            <Route path="/asd" element={<>Page not found</>}/>
+            <Route path="/*" element={<>Page not found</>}/>
           </Routes>
         
       </CssBaseline>
