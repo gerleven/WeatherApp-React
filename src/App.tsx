@@ -5,9 +5,11 @@ import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
 import { AppState } from "./global-interfaces/global-state.interface";
 
-import SearchPage from "./pages/Search-page";
+import HomePage from "./pages/Home-page";
 import PageNotFound from "./pages/Page-not-found";
-import Banner from "./global-components/Banner";
+
+import Banner from "./global-components/banner/Banner";
+import SearchPrompt from "./global-components/search-prompt/Search-prompt";
 
 
 
@@ -24,7 +26,7 @@ function App() {
         <AppContext.Provider value={{appTitle: appTitle, updateAppTitle: (newTitle: string)=>{setAppTitle(newTitle)}}}>
             <Banner></Banner>
           <Routes>
-            <Route path="/" element={<SearchPage/>} />
+            <Route path="/" element={<HomePage/>} />
             <Route path="/*" element={<PageNotFound/>} />
           </Routes>
         </AppContext.Provider>
